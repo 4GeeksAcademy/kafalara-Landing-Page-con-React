@@ -18,8 +18,8 @@ const Home = () => {
       <Jumbotron />
       <div className="container mt-5">
         <div className="row">
-          {cardDescription.map((card) => (
-            <div className="col-md-3 mb-">
+          {cardDescription.map((card, index) => (
+            <div className="col-md-3 mb-" key={index}>
               <Card title={card.title} text={card.text} img={card.image} />
             </div>
           ))}
